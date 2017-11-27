@@ -4,7 +4,9 @@
   "description": "Clon de TW con react",
   "main": "/build/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base build --color --progress",
+    "start": "npm run build && npm run serve"
   },
   "author": "",
   "license": "ISC",
