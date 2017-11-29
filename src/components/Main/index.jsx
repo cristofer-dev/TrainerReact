@@ -11,7 +11,7 @@ class Main extends Component {
                     picture: 'https://randomuser.me/api/portraits/women/17.jpg',
                     displayName : 'May Lao',
                     username : 'maylao',
-                    date : date.now()
+                    date : Date.now()
                 }
             ]
         }

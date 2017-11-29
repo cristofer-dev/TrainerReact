@@ -1,0 +1,48 @@
+.root{
+	border: 1px solid #2ecc71;
+	background-color: #fff;
+	border-radius: 0.5em;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.text{
+	font-size: 16pt;
+	font-weight: 200;
+}
+
+.user{
+	display: flex;
+	align-items: center;
+}
+
+.avatar{
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+}
+
+.displayName{
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+.userName{
+	color: blue;
+}
+
+.date{
+	color: blue;
+	padding: 0.5em;
+	font-size: 10px;
+}
+
+.buttons{
+	display: flex;
+	justify-content: flex-start;
+	color: #000;
+}
+
+.icon{
+	margin-right: 3em;
+}
