@@ -6,12 +6,24 @@ import Header from '../Header'
 import Main from '../Main'
 
 class App extends Component {
+	constructor (){
+		super()
+
+		this.state = {
+			user: {
+				photoURL: 'https://randomuser.me/api/portraits/women/17.jpg',
+				email: 'lia@tomson.com',
+				onOpenText: false
+			}
+		}
+	}
+
     render() {
         return (
             <div>
                 <Header/>
 
-                <Main/>
+                <Main user={this.state.user}/>
             </div>
         )
     }
