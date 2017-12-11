@@ -29,16 +29,45 @@ class Main extends Component {
                 }
             ]
         }
+        this.handleSendText = this.handleSendText.bind(this)
+        this.handleCloseText = this.handleCloseText.bind(this)
+        this.handleOpenText = this.handleOpenText.bind(this)
     }
 
+    handleSendText (event) {
+        event.preventDefault()
+        let newMessage = {
+            id : uuid.v4(),
+            userName: this.props.user.email.split('@')[0],
+            picture: this.props.user.photoURL,
+            displayName: this.props.user.displayName,
+            date: Date.now(),
+            text: event.target.text.value
+        }
+
+        this.setState({
+            messages : this.state.messages.concat([newMessage]),
+            OpenText : false
+        })
+    }
+    handleCloseText (event) {
+        event.preventDefault()
+        this.setState({ OpenText: false })
+    }
     handleOpenText (event){
         event.preventDefault()
         this.setState({ OpenText : true })
     }
 
     renderOpenText (){
+
         if ( this.state.OpenText ) {
-            return <InputText />
+            return (
+                <InputText 
+                    onSendText={this.handleSendText}
+                    onCloseText={this.handleCloseText}
+                />
+            )
         }
     }
 
