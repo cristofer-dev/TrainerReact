@@ -6,13 +6,7 @@ import 'normalize-css'
 import styles from './app.css'
 import Header from '../Header'
 import Main from '../Main'
-
-
-const Profile = () => (
-  <div>
-    <h2>Profile</h2>
-  </div>
-)
+import Profile from '../Profile'
 
 const Products = () => (
   <div>
