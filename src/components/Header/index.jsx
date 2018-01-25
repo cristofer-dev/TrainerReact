@@ -9,7 +9,6 @@ function Header() {
       <h1 className={styles.logo}>Tweet Green</h1>
       <Link to="/">Home</Link>
       <Link to="/profile">Profile</Link>
-      <Link to="/products">Products</Link>
     </header>
   )
 }

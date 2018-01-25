@@ -8,12 +8,6 @@ import Header from '../Header'
 import Main from '../Main'
 import Profile from '../Profile'
 
-const Products = () => (
-  <div>
-    <h2>Products</h2>
-  </div>
-)
-
 class App extends Component {
 	constructor (){
 		super()
@@ -38,7 +32,6 @@ class App extends Component {
             )}
           />
           <Route path="/profile" component={Profile}/>
-          <Route path="/products" component={Products}/>
       </div>
       )
   }
